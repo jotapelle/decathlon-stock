@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Put your product url on the textbox and press start. Every minute the app will check if the product is available or not.</p>
+</div>
+<div class="row pt-40">
+    <div class="col-4">
+        <div class="row">
+            <div class="col">
+                <p>Product URL:</p>
+                <input class="form-control" id="productUrl" placeholder="https://www.decathlon.es/es/p/disco-pesas...">
+                <input class="form-control mt-2" id="email" placeholder="example@gmail.com">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <div class="col">
+                <button id="btnStart" type="button" onclick="start()" class="btn btn-dark">Start</button>
+                <button id="btnStop" type="button" onclick="stop()" disabled class="btn btn-dark">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-8">
+        <table id="tableResults" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>URL</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>           
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Time</th>
+                    <th>URL</th>
+                    <th>Result</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
